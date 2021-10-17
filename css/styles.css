@@ -1,0 +1,186 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    background: #f1f1f1 url("../graph-bg-svg") no-repeat;
+    background-position: 0 20%;
+    background-size: 150%;
+    font-weight: normal;
+    text-align: center;
+}
+
+h1 .quote{
+    font-family: 'Playfair Display', serif;
+}
+
+.phone {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 250px;
+}
+
+.wrapper {
+    padding: .5em;
+    position: relative;
+    margin-top: 4em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left, .right {
+    position: relative;
+}
+
+li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.left {
+    height: 50vh;
+    display: grid;
+    place-content: center;
+}   
+
+h1 {
+    width: 70%;
+    margin: 0 auto 1.5em;
+}
+
+
+.cta {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: .7em .9em;
+    border-radius: 9px;
+    background-color: green;
+    color: white;
+}
+
+.right {
+    margin-top: 12em;
+}
+
+.right ul li {
+    margin-bottom: 2em;
+}
+
+.right ul {
+    width: 80%;
+    margin: 0 auto 2em;
+}
+
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 2.5em;
+        width: 90%;
+    }
+    body {
+        background-position: 0 30%;
+        background-size: 130%;
+    }
+
+    }
+
+    @media screen and (min-width: 850px) {
+        body {
+            text-align: left;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            background-position: 0 80%;
+            background-size: 100%;
+        }
+      
+        .wrapper .phone {
+            margin: unset;
+            top: 5em;
+            left: 10%;
+        }
+        .wrapper {
+            display: flex;
+            padding: 2em;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .inner-content h1 {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .left {
+            padding: 3em;
+            width: 75%;
+        }
+        .right ul {
+            width: 100%;
+        }
+
+        .right {
+            margin-top: 0;
+            padding: 3em;
+        }
+
+        .right ul li {
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            align-items: center;
+            background: #8e8e8e;
+            padding: 1em;
+            grid-gap: .7em;
+            border-radius: .5em;
+        }
+        li p {
+            margin: 0;
+        }
+
+        .quote {
+            font-weight: 500;
+            
+        }
+
+        .auth {
+            margin-top: 1em;
+            font-size: .8em;
+        }
+
+        li:nth-of-type(1) {
+            transform: translateX(-30px);
+        }
+        li:nth-of-type(2) {
+            transform: translateX(30px);
+        }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        body {
+            font-size: 17px;
+        }
+    }
+
+    .cta {
+        transition: background .5s;
+    }
+
+    .cta:hover {
+        background: blue;
+        transform: scale(1);
+        display: inline-block;
+        
+    }
+
+    
